@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMU//INDEX — The Console &amp; Emulator Field Guide</title>
+  <meta name="description" content="A visually rich, curated field guide to mainstream consoles and the PC emulators that keep them alive. 37 platforms, 111 emulator options, seven generations." />
+  <meta name="theme-color" content="#08080c" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d9ff57'/%3E%3Cpath d='M20 44 44 20M20 20h24v24' fill='none' stroke='%2308080c' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#catalog">Skip to the index</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="site-head" id="top">
+    <a class="brand" href="#top" aria-label="EMU Index home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="brand-word">EMU<span class="brand-slash">//</span>INDEX</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#catalog" data-nav>Catalog</a>
+      <a href="#timeline" data-nav>Chronology</a>
+      <a href="#start" data-nav>Field notes</a>
+    </nav>
+
+    <div class="head-tools">
+      <span class="edition">VOL. 01 <b>/</b> 2026</span>
+      <button class="search-jump" id="search-jump" type="button" aria-label="Jump to search">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></svg>
+        <span>Search</span><kbd>/</kbd>
+      </button>
+    </div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow reveal" data-reveal>
+          <span class="live-dot"></span> The independent emulation field guide
+        </p>
+        <h1 class="hero-title reveal" data-reveal>
+          <span>Every console.</span>
+          <span class="hero-title-alt">Every <em>emulator.</em></span>
+        </h1>
+        <p class="hero-lede reveal" data-reveal>
+          From the wood-grain Atari to the hybrid Switch — a hand-built index of the
+          hardware we grew up with, and the software that refuses to let it die.
+        </p>
+        <div class="hero-actions reveal" data-reveal>
+          <a class="btn btn-primary" href="#catalog">
+            Explore the index
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg>
+          </a>
+          <button class="btn btn-ghost" id="hero-random" type="button">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h3l7 8h4M3 14h3l2-2.3M13 6h4M17 3v3h-3M17 14v3h-3"/></svg>
+            Surprise me
+          </button>
+        </div>
+        <dl class="hero-meta reveal" data-reveal>
+          <div><dt>Platforms</dt><dd id="meta-platforms">37</dd></div>
+          <div><dt>Emulators</dt><dd id="meta-emulators">111</dd></div>
+          <div><dt>Span</dt><dd>1977—2017</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-stage reveal" data-reveal aria-hidden="true">
+        <div class="stage-ring"></div>
+        <div class="stage-glow"></div>
+        <span class="hud hud-tl">SIGNAL / LIVE</span>
+        <span class="hud hud-br">ARCHIVE / 001—037</span>
+        <div class="hero-stack" id="hero-stack"></div>
+        <div class="stage-caption">
+          <span>FIG. 01</span>
+          <p>Hardware, remembered.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TICKER ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track" id="ticker-track"></div>
+    </div>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats-band" aria-label="Archive statistics">
+      <div class="stat">
+        <span class="stat-num" data-count="37">00</span>
+        <span class="stat-label">Platforms indexed</span>
+        <span class="stat-note">Generation 2 through 8</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="111">00</span>
+        <span class="stat-label">Emulator options</span>
+        <span class="stat-note">Desktop &amp; browser</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="93">00</span>
+        <span class="stat-label">Open-source options</span>
+        <span class="stat-note">Free as in preservation</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="49" data-suffix="yrs">00</span>
+        <span class="stat-label">Of hardware history</span>
+        <span class="stat-note">1977 → today</span>
+      </div>
+    </section>
+
+    <!-- ============ CATALOG ============ -->
+    <section class="catalog" id="catalog">
+      <div class="section-head">
+        <p class="section-kicker"><span>01</span> / Catalog</p>
+        <h2>Pick a platform.<br />Find its <em>soul.</em></h2>
+        <p class="section-aside">
+          Filter by maker, form or generation. Every entry lists the emulators
+          worth your time — with accuracy, licensing and platform support.
+        </p>
+      </div>
+
+      <div class="toolbar">
+        <div class="search-wrap">
+          <svg class="search-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg>
+          <input id="search" type="search" placeholder="Search consoles, emulators, games…" autocomplete="off" spellcheck="false" aria-label="Search consoles, emulators and games" />
+          <kbd class="search-kbd">/</kbd>
+          <button class="search-clear" id="search-clear" type="button" aria-label="Clear search" hidden>
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8"/></svg>
+          </button>
+        </div>
+
+        <div class="filter-row">
+          <div class="chip-group" id="maker-filter" role="group" aria-label="Filter by manufacturer">
+            <button class="chip is-active" data-maker="all" type="button" aria-pressed="true">All makers</button>
+            <button class="chip" data-maker="nintendo" type="button" aria-pressed="false">Nintendo</button>
+            <button class="chip" data-maker="sega" type="button" aria-pressed="false">Sega</button>
+            <button class="chip" data-maker="sony" type="button" aria-pressed="false">Sony</button>
+            <button class="chip" data-maker="microsoft" type="button" aria-pressed="false">Microsoft</button>
+            <button class="chip" data-maker="atari" type="button" aria-pressed="false">Atari</button>
+            <button class="chip" data-maker="nec" type="button" aria-pressed="false">NEC</button>
+            <button class="chip" data-maker="snk" type="button" aria-pressed="false">SNK</button>
+            <button class="chip" data-maker="other" type="button" aria-pressed="false">Other</button>
+          </div>
+
+          <div class="control-group">
+            <label class="select-wrap">
+              <span class="sr-only">Generation</span>
+              <select id="gen-filter">
+                <option value="all">All generations</option>
+                <option value="2">Gen 2 · Cartridge Dawn</option>
+                <option value="3">Gen 3 · 8-bit Boom</option>
+                <option value="4">Gen 4 · 16-bit Wars</option>
+                <option value="5">Gen 5 · The 3D Leap</option>
+                <option value="6">Gen 6 · The Online Age</option>
+                <option value="7">Gen 7 · The HD Era</option>
+                <option value="8">Gen 8 · Connected Gen</option>
+              </select>
+              <svg viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1.5 5 5 5-5"/></svg>
+            </label>
+
+            <label class="select-wrap">
+              <span class="sr-only">Sort order</span>
+              <select id="sort-filter">
+                <option value="chrono">Chronological</option>
+                <option value="newest">Newest first</option>
+                <option value="alpha">A → Z</option>
+                <option value="emulators">Most emulated</option>
+              </select>
+              <svg viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1.5 5 5 5-5"/></svg>
+            </label>
+
+            <button class="toggle" id="oss-toggle" type="button" aria-pressed="false">
+              <span class="toggle-track"><i></i></span>
+              Open source only
+            </button>
+          </div>
+        </div>
+
+        <div class="results-line" aria-live="polite">
+          <p><span id="result-count">37</span> platforms in view <span class="result-sep">/</span> <span id="result-emus">111</span> emulator options</p>
+          <button class="text-btn" id="reset-filters" type="button" hidden>Reset filters</button>
+        </div>
+      </div>
+
+      <div class="grid" id="grid"></div>
+
+      <div class="empty" id="empty" hidden>
+        <span class="empty-glyph">∅</span>
+        <h3>No signal.</h3>
+        <p>Nothing in the archive matches that combination. Try loosening a filter.</p>
+        <button class="btn btn-primary" id="empty-reset" type="button">Reset the filters</button>
+      </div>
+
+      <aside class="frontier" aria-label="Consoles without a mature emulator">
+        <div class="frontier-copy">
+          <p class="section-kicker"><span>+</span> / The frontier</p>
+          <h3>Current gen is still off the map.</h3>
+          <p>No mature, publicly available emulator exists for these machines yet. Research is ongoing — this index will grow when it lands.</p>
+        </div>
+        <ul class="frontier-list">
+          <li><span>PlayStation 5</span><em>2020</em><b>No public emulator</b></li>
+          <li><span>Xbox Series X|S</span><em>2020</em><b>No public emulator</b></li>
+          <li><span>Nintendo Switch 2</span><em>2025</em><b>Uncharted territory</b></li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ============ TIMELINE ============ -->
+    <section class="timeline-section" id="timeline">
+      <div class="section-head">
+        <p class="section-kicker"><span>02</span> / Chronology</p>
+        <h2>Seven generations,<br />one long <em>obsession.</em></h2>
+        <p class="section-aside">
+          Each era added a new trick — sprites, polygons, discs, motion, HD.
+          Follow the rail, or jump straight into a generation.
+        </p>
+      </div>
+      <div class="timeline" id="timeline-rail"></div>
+    </section>
+
+    <!-- ============ FIELD NOTES ============ -->
+    <section class="start" id="start">
+      <div class="section-head">
+        <p class="section-kicker"><span>03</span> / Field notes</p>
+        <h2>Before you<br /><em>press start.</em></h2>
+        <p class="section-aside">
+          Emulation is legal in most places; sourcing games is the part that
+          needs care. Here is the short version.
+        </p>
+      </div>
+
+      <div class="notes-grid">
+        <article class="note-card">
+          <span class="note-num">01</span>
+          <h3>Dump your own media</h3>
+          <p>Own the cartridge or disc? Rip it yourself. Downloading ROMs you do not own is copyright infringement in most jurisdictions — and it is not what this archive is for.</p>
+          <span class="note-tag">Ethics</span>
+        </article>
+        <article class="note-card">
+          <span class="note-num">02</span>
+          <h3>Respect the BIOS</h3>
+          <p>Several systems need a firmware dump to boot. Extract it from your own hardware. Emulator projects generally cannot and will not supply those files for you.</p>
+          <span class="note-tag">Firmware</span>
+        </article>
+        <article class="note-card">
+          <span class="note-num">03</span>
+          <h3>Start with the pick</h3>
+          <p>The highlighted emulator is the best balance of accuracy, usability and momentum. Chasing cycle-perfect emulation is fun — but it is a hobby, not a prerequisite.</p>
+          <span class="note-tag">Practical</span>
+        </article>
+      </div>
+
+      <aside class="retro-callout">
+        <div>
+          <p class="retro-kicker">One front end to rule them all?</p>
+          <p><strong>RetroArch</strong> bundles dozens of the cores listed here into a single, controller-friendly app. Great for a TV setup — slightly more work to configure.</p>
+        </div>
+        <a class="btn btn-ghost" href="https://www.retroarch.com/" target="_blank" rel="noopener noreferrer">
+          Visit RetroArch
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6M7 6h7v7"/></svg>
+        </a>
+      </aside>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-foot">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <p>EMU<span class="brand-slash">//</span>INDEX</p>
+        <span class="foot-sub">An independent field guide to console preservation.</span>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="#catalog">Catalog</a>
+        <a href="#timeline">Chronology</a>
+        <a href="#start">Field notes</a>
+        <a href="#top">Back to top ↑</a>
+      </nav>
+      <div class="foot-note">
+        <p>No ROMs. No BIOS. No piracy.</p>
+        <p class="muted">Emulation moves fast — statuses are a 2026 snapshot.</p>
+      </div>
+    </div>
+    <div class="foot-word" aria-hidden="true">EMU/INDEX</div>
+    <div class="foot-bottom">
+      <span>Compiled with care · 37 platforms · 111 emulator options</span>
+      <span>Not affiliated with any manufacturer or emulator project.</span>
+    </div>
+  </footer>
+
+  <!-- ============ MODAL ============ -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Close platform details">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg>
+      </button>
+      <div class="modal-scroll" id="modal-scroll"></div>
+    </div>
+  </div>
+
+  <noscript>
+    <p style="padding:2rem;color:#fff">This archive needs JavaScript to render its catalog.</p>
+  </noscript>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
